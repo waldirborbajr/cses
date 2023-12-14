@@ -1,5 +1,5 @@
 fn main() {
-    let mut n: u32 = std::io::read_to_string(std::io::stdin())
+    let mut n: u64 = std::io::read_to_string(std::io::stdin())
         .unwrap()
         .trim()
         .parse()
@@ -13,6 +13,6 @@ fn main() {
         } else {
             n = 3 * n + 1;
         }
-        print!("{}", n);
+        print!(" {n}");
     }
 }
